@@ -9,7 +9,7 @@ from discrete_prediction.algo.common.multivariate_processor import create_split,
     format_testing_data
 from discrete_prediction.algo.saxvsm import train_multivariate_model, predict_model
 from discrete_prediction.args import data_file_path, multivariate_data_processing_args, saxvsm_args
-from utils.data_preprocessor import normalise_train_data, normalise_data
+from discrete_prediction.algo.common.data_preprocessor import normalise_train_data, normalise_data
 
 # load data
 df = pd.read_csv(data_file_path, delimiter=',')

@@ -10,7 +10,7 @@ from discrete_prediction.algo.common.multivariate_processor import create_split,
 from discrete_prediction.algo.saxvsm import train_multivariate_model, predict_model
 from discrete_prediction.args import data_file_path, multivariate_data_processing_args, f1_label, recall_label, \
     precision_label, result_file_path
-from utils.data_preprocessor import normalise_train_data, normalise_data
+from discrete_prediction.algo.common.data_preprocessor import normalise_train_data, normalise_data
 
 # # load, process and format data
 # train, val = create_split(data_file_path, args=multivariate_data_processing_args)
