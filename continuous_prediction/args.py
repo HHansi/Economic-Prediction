@@ -1,7 +1,5 @@
 # Created by Hansi at 12/5/2020
 
-data_file_path = "../../data/Data.csv"
-
 data_args = {
     'test_split': 0.2,
     'future_n': 1,
