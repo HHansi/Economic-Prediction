@@ -4,7 +4,7 @@ from sklearn import metrics
 from discrete_prediction.args import f1_label, recall_label, precision_label
 
 
-def evaluate(actuals, predictions, average = 'macro'):
+def evaluate(actuals, predictions, average='macro'):
     results = dict()
     f1 = metrics.f1_score(actuals, predictions, average=average)
     results[f1_label] = f1
@@ -14,6 +14,9 @@ def evaluate(actuals, predictions, average = 'macro'):
 
     precision = metrics.precision_score(actuals, predictions, average=average)
     results[precision_label] = precision
+
+    # f1_2 = (2*precision*recall)/(precision+recall)
+    # print(f1_2)
     return results
 
 

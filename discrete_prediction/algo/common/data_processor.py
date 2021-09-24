@@ -1,15 +1,8 @@
 # Created by Hansi at 11/22/2020
 import numpy as np
 from pyentrp import entropy as ent
-from sklearn.model_selection import train_test_split
 
 from discrete_prediction.algo.common.label_generator import label_instances_for_classification
-from discrete_prediction.args import random_seed
-
-
-def create_split(data, args):
-    train, val = train_test_split(data, test_size=args['test_size'], shuffle=False, random_state=random_seed)
-    return train, val
 
 
 def transform_to_series(data, args):
